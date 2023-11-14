@@ -45,9 +45,10 @@ function hoverDraw() {
     const drawNodes = document.querySelectorAll(`.draw-box`);
 
     drawNodes.forEach((drawNode) => {
-        drawNode.addEventListener('mouseover', () => {
-            let randVar = randomRGB();
-            drawNode.style = `background-color: ${randVar};`;
+        drawNode.addEventListener('click', () => {
+            // let randVar = randomRGB();
+            // drawNode.style = `background-color: ${randVar};`;
+            drawNode.style = `background-color: black;`;
         });
     });
 }
