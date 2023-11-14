@@ -36,7 +36,7 @@ function sliderChange() {
 
     slider.oninput = function() {
         clearGrid();
-        gridValueNode.innerText = this.value+ ' x ' + this.value;
+        gridValueNode.innerText = this.value + ' x ' + this.value;
         createGrid(this.value,this.value);
     }
 }
