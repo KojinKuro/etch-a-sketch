@@ -46,8 +46,16 @@ function hoverDraw() {
 
     drawNodes.forEach((drawNode) => {
         drawNode.addEventListener('mouseover', () => {
-            console.log('test');
-            drawNode.style = `background-color: black;`;
+            let randVar = randomRGB();
+            drawNode.style = `background-color: ${randVar};`;
         });
     });
+}
+
+function randomRGB() {
+    const RANDOM_NUMBER = 256;
+    let num1 = Math.floor(Math.random() * RANDOM_NUMBER);
+    let num2 = Math.floor(Math.random() * RANDOM_NUMBER);
+    let num3 = Math.floor(Math.random() * RANDOM_NUMBER);
+    return `rgb(${num1},${num2},${num3})`;
 }
