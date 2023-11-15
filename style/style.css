@@ -1,13 +1,14 @@
 body {
     background-color: grey;
+    display: flex;
 }
 
 .draw-grid {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
 }
 
 .draw-row {
